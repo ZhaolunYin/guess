@@ -1,11 +1,16 @@
 # Guess
 
-[![Badge Workflow]][Workflow]
-[![Badge License]][License] 
-![Badge Language] 
-[![Badge Pull Requests]][Pull Requests] 
-[![Badge Issues]][Issues] 
-![Badge Hi Mom]
+[Badge Workflow]: https://img.shields.io/github/actions/workflow/status/zhaolunyin/guess/WORKFLOW_FILE.yml?branch=main&style=for-the-badge
+[Badge License]: https://img.shields.io/github/license/zhaolunyin/guess?style=for-the-badge
+[Badge Language]: https://img.shields.io/github/languages/top/zhaolunyin/guess?style=for-the-badge
+[Badge Pull Requests]: https://img.shields.io/github/issues-pr/zhaolunyin/guess?style=for-the-badge
+[Badge Issues]: https://img.shields.io/github/issues/zhaolunyin/guess?style=for-the-badge
+[Badge Hi Mom]: https://img.shields.io/badge/Hi-Mom!-ff69b4?style=for-the-badge
+
+[Workflow]: https://github.com/zhaolunyin/guess/actions
+[License]: https://github.com/zhaolunyin/guess/blob/main/LICENSE
+[Pull Requests]: https://github.com/zhaolunyin/guess/pulls
+[Issues]: https://github.com/zhaolunyin/guess/issues
 
 > *A C program that creates a guessing game based on any csv file.*
 
