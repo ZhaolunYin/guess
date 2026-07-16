@@ -1,6 +1,6 @@
 objects = game.o main.o node.o
 guess: $(objects)
-	cc -o guess game.o main.o node.o
+	cc -o guess $(objects)
 $(objects): guess.h
 
 .PHONY: clean
