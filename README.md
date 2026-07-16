@@ -7,13 +7,14 @@
 [![Badge Issues]][Issues] 
 ![Badge Hi Mom]
 
-> *A program that creates a guessing game based on any csv file.*
+> *A C program that creates a guessing game based on any csv file.*
 
 # Features
 
 - Portable guessing game capable of using any text-based dataset.
 - Many flags for complete control of randomness and function.
 - Can show all fields to aid as a study tool.
+- Written in C for maximum speed for large datasets.
 
 # Install
 
