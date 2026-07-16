@@ -47,7 +47,7 @@ int parse_line(struct Node *head, FILE *file, char sepchar) {
             }
             else {
                 buf[MAXOPL - 1] = '\0';
-                printf("Length of value exceeds length of buffer. Value truncated at '%s'", buf);
+                printf("Length of value exceeds length of buffer. Value truncated at '%s'\n", buf);
             }
         }
     }

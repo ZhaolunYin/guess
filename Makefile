@@ -5,6 +5,6 @@ $(objects): guess.h
 
 .PHONY: clean
 clean:
-	-rm guess $(objects)
+	@rm guess $(objects)
 run: guess
 	./guess

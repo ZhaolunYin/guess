@@ -6,6 +6,7 @@ int main(int argc, char *argv[]) {
     unsigned int show_all = 0, use_case = 0, setline = 0, seed = time(NULL) ^ getpid();
     int max_attempts = -1;
     int opt;
+    char *end = NULL;
 
     // Parse flags
     while ((opt = getopt(argc, argv, "acd:hl:n:s:")) != -1) {
@@ -14,11 +15,24 @@ int main(int argc, char *argv[]) {
             case 'c': use_case = 1; break;
             case 'd': sepchar = optarg[0]; break;
             case 'h': usage(); return 0;
-            case 'l': setline = strtol(optarg, NULL, 10); break;
-            case 'n': max_attempts = strtol(optarg, NULL, 10); break;
-            case 's': seed = strtol(optarg, NULL, 10); break;
+            case 'l': setline = strtol(optarg, &end, 10); break;
+            case 'n': max_attempts = strtol(optarg, &end, 10); break;
+            case 's': seed = strtol(optarg, &end, 10); break;
             case '?': usage(); return 1;
         }
+    }
+
+    if (end && *end != '\0') {
+        printf("Expected integer but recieved string.\n");
+        return 1;
+    }
+    if (max_attempts < -1) {
+        printf("Max attempts must be a positive number.\n");
+        return 1;
+    }
+    if (setline < 0) {
+        printf("Line number must be positive.\n");
+        return 1;
     }
 
     srand(seed);
