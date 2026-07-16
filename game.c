@@ -95,7 +95,10 @@ void guess_loop(struct Node *ops, struct Node *secret, int nops, int show_all, i
         // Create input buffer for user
         char input[MAXOPL];
         // Read input from stdin
-        fgets(input, MAXOPL, stdin);
+        if (!fgets(input, MAXOPL, stdin)) {
+            printf("\n");
+            return;
+        }
         input[strcspn(input, "\n")] = '\0';
         // Color is blue because ansi escape code from display_options still persists so reset it
         printf("\e[0m");

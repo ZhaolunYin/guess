@@ -42,7 +42,10 @@ int main(int argc, char *argv[]) {
     if (optind >= argc) {
         printf("No file input. Please enter the file path of the dataset.\n");
         char input[MAXOPL];
-        fgets(input, MAXOPL, stdin);
+        if (!fgets(input, MAXOPL, stdin)) {
+            printf("\n");
+            return 1;
+        }
         input[strcspn(input, "\n")] = '\0';
         filename = input;
     }
