@@ -1,7 +1,5 @@
 # Guess
 
-
-
 > *A C program that creates a guessing game based on any csv file.*
 
 # Features
