@@ -1,8 +1,6 @@
 # Guess
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Language: C](https://img.shields.io/badge/Language-C-blue?style=for-the-badge)]()
-[![Hi Mom!](https://img.shields.io/badge/Hi-Mom!-ff69b4?style=for-the-badge)]()
+
 
 > *A C program that creates a guessing game based on any csv file.*
 
