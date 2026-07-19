@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
 
     srand(seed);
 
-    char *filename = argv[optind];
+    char *filename;
     // if there are no non-flag arguments, return 1
     if (optind >= argc) {
         printf("No file input. Please enter the file path of the dataset.\n");
@@ -48,6 +48,9 @@ int main(int argc, char *argv[]) {
         }
         input[strcspn(input, "\n")] = '\0';
         filename = input;
+    }
+    else {
+        filename = argv[optind];
     }
 
     // open the first non-flag argument
