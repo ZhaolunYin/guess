@@ -7,6 +7,7 @@
 #include <strings.h>
 #include <unistd.h>
 #include <time.h>
+#include <getopt.h>
 
 #define MAXOPL 1024
 
